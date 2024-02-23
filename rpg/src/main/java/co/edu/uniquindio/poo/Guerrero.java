@@ -27,11 +27,11 @@ public class Guerrero extends Personaje{
 
     @Override
 
-    public boolean validarAtributos(){
+    public boolean verificarAtributos(){
+
         return fuerza==62 && resistencia==35 && vitalidad==37;
     }
 
-    
 
     
 }

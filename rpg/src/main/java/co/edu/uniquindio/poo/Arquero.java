@@ -27,7 +27,7 @@ public class Arquero extends Personaje {
 
     @Override
 
-    public boolean validarAtributos(){
+    public boolean verificarAtributos(){
 
         return destreza==30 && agilidad==67 &&precision==44;
     }

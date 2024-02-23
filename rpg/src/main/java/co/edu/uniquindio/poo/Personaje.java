@@ -1,6 +1,6 @@
 package co.edu.uniquindio.poo;
 
-public class Personaje {
+public class Personaje implements AtributoJugador{
 
     private String nombre;
     private String descripcion;
@@ -38,6 +38,21 @@ public class Personaje {
 
     public void setDineroInicial(float dineroInicial) {
         this.dineroInicial = dineroInicial;
+    }
+
+    public String getNombre(){
+        return nombre;
+    }
+
+    public void setNombre(String nombre){
+        this.nombre= nombre;
+    }
+
+
+    @Override
+    public boolean verificarAtributos() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'verificarAtributos'");
     }
 
     

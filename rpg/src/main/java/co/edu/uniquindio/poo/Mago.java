@@ -28,7 +28,7 @@ public class Mago extends Personaje {
 
     @Override
 
-    public boolean validarAtributos(){
+    public boolean verificarAtributos(){
 
         return inteligencia==43 && sabiduria==64 && energiaEnergia==37;
     }
