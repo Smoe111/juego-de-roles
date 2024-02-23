@@ -1,6 +1,6 @@
 package co.edu.uniquindio.poo;
 
-public class Personaje implements AtributoJugador{
+public class Personaje implements CaracteristicasJuagdor{
 
     private String nombre;
     private String descripcion;
@@ -53,6 +53,13 @@ public class Personaje implements AtributoJugador{
     public boolean verificarAtributos() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'verificarAtributos'");
+    }
+
+
+    @Override
+    public void agregarHabilidad() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'agregarHabilidad'");
     }
 
     

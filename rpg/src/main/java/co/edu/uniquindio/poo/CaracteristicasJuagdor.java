@@ -1,6 +1,7 @@
 package co.edu.uniquindio.poo;
 
-public interface AtributoJugador {
+public interface CaracteristicasJuagdor {
     
     public abstract boolean verificarAtributos();
+    public abstract void agregarHabilidad();
 }

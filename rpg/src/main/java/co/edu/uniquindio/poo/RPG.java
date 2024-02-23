@@ -18,6 +18,7 @@ public class RPG {
         return nombreJuego;
     }
 
+    // Principio Single Responsability
 
     public boolean verificarNombreExistente(String nombre){
 
