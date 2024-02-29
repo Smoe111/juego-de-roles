@@ -61,7 +61,5 @@ public class Arquero extends Personaje {
     }
 
 
-   public Personaje contruir(){
-    return new Personaje();
-    }
+   
 }

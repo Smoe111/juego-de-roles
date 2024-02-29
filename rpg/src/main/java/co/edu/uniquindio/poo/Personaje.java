@@ -13,46 +13,83 @@ public class Personaje {
     private List<String> atributos;
     private List<String> habilidades;
 
-    public void setNombre(String nombre) {
-        Personaje.nombre = nombre;
-    }
-    public void setDescripcion(String descripcion) {
-        Personaje.descripcion = descripcion;
-    }
-    public static void setApodo(String apodo) {
-        Personaje.apodo = apodo;
-    }
-    public static void setDineroInicial(float dineroInicial) {
-        Personaje.dineroInicial = dineroInicial;
-    }
-    public static void setAtributos(List<String> atributos) {
-        Personaje.atributos = atributos;
-    }
-    public static void setHabilidades(List<String> habilidades) {
-        Personaje.habilidades = habilidades;
-    }
-    public static String getNombre() {
+   
+
+    public String getNombre() {
         return nombre;
     }
-    public static String getDescripcion() {
+
+
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+
+
+    public String getDescripcion() {
         return descripcion;
     }
-    public static String getApodo() {
+
+
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+
+
+    public String getApodo() {
         return apodo;
     }
-    public static float getDineroInicial() {
+
+
+
+    public void setApodo(String apodo) {
+        this.apodo = apodo;
+    }
+
+
+
+    public float getDineroInicial() {
         return dineroInicial;
     }
-    public static List<String> getAtributos() {
+
+
+
+    public void setDineroInicial(float dineroInicial) {
+        this.dineroInicial = dineroInicial;
+    }
+
+
+
+    public List<String> getAtributos() {
         return atributos;
     }
-    public static List<String> getHabilidades() {
+
+
+
+    public void setAtributos(List<String> atributos) {
+        this.atributos = atributos;
+    }
+
+
+
+    public List<String> getHabilidades() {
         return habilidades;
     }
 
+
+
+    public void setHabilidades(List<String> habilidades) {
+        this.habilidades = habilidades;
+    }
+
+
+
     public Personaje construir(){
         
-        Personaje personaje =new Personaje();
+        Personaje personaje = new Personaje();
         Personaje.setNombre(nombre);
         Personaje.setDescripcion(descripcion);
         Personaje.setApodo(apodo);
@@ -60,7 +97,6 @@ public class Personaje {
         Personaje.setAtributos(atributos);
         Personaje.setHabilidades(habilidades);
         return personaje;
-
     }
 
     

@@ -12,7 +12,10 @@ public Jugador() {
     listaPersonajes = new ArrayList<>();
 }
 
-public void adicionarMago(String nombre, String descripcion, String apodo, float dineroInicial, List<String> atributos, List<String>habilidades){
+/*public void adicionarMago(String nombre, String descripcion, String apodo, float dineroInicial, List<String> atributos, List<String>habilidades){
 
-    personaje= new DirectorPersonaje(new ConstructorMago());
-}
+    ConstructorMago constructor= new ConstructorMago();
+    personaje= new DirectorPersonaje(constructor);
+    personaje.producto(nombre, descripcion, apodo, dineroInicial, atributos, habilidades);
+    listaPersonajes.add(constructor.construir());
+} 

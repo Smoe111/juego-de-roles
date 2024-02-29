@@ -39,4 +39,11 @@ public class ConstructorArquero implements ConstructorPersonaje {
     }
 
 
+    @Override
+    public Personaje construir() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'construir'");
+    }
+
+
 }
