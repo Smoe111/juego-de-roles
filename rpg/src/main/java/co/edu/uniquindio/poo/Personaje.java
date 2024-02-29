@@ -1,68 +1,67 @@
 package co.edu.uniquindio.poo;
 
-public class Personaje implements CaracteristicasJuagdor{
+import java.util.LinkedList;
+import java.util.List;
+
+
+public class Personaje {
 
     private String nombre;
     private String descripcion;
     private String apodo;
-    private float dineroInicial=0;
-    
-    public Personaje(String nombre, String descripcion, String apodo, float dineroInicial) {
-        
-        this.nombre= nombre;
-        this.descripcion = descripcion;
-        this.apodo = apodo;
-        this.dineroInicial = dineroInicial;
-    }
+    private float dineroInicial;
+    private List<String> atributos;
+    private List<String> habilidades;
 
-    
-    public String getDescripcion() {
-        return descripcion;
+    public void setNombre(String nombre) {
+        Personaje.nombre = nombre;
     }
-
     public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+        Personaje.descripcion = descripcion;
     }
-
-    public String getApodo() {
-        return apodo;
+    public static void setApodo(String apodo) {
+        Personaje.apodo = apodo;
     }
-
-    public void setApodo(String apodo) {
-        this.apodo = apodo;
+    public static void setDineroInicial(float dineroInicial) {
+        Personaje.dineroInicial = dineroInicial;
     }
-
-    public float getDineroInicial() {
-        return dineroInicial;
+    public static void setAtributos(List<String> atributos) {
+        Personaje.atributos = atributos;
     }
-
-    public void setDineroInicial(float dineroInicial) {
-        this.dineroInicial = dineroInicial;
+    public static void setHabilidades(List<String> habilidades) {
+        Personaje.habilidades = habilidades;
     }
-
-    public String getNombre(){
+    public static String getNombre() {
         return nombre;
     }
-
-    public void setNombre(String nombre){
-        this.nombre= nombre;
+    public static String getDescripcion() {
+        return descripcion;
+    }
+    public static String getApodo() {
+        return apodo;
+    }
+    public static float getDineroInicial() {
+        return dineroInicial;
+    }
+    public static List<String> getAtributos() {
+        return atributos;
+    }
+    public static List<String> getHabilidades() {
+        return habilidades;
     }
 
+    public Personaje construir(){
+        
+        Personaje personaje =new Personaje();
+        Personaje.setNombre(nombre);
+        Personaje.setDescripcion(descripcion);
+        Personaje.setApodo(apodo);
+        Personaje.setDineroInicial(dineroInicial);
+        Personaje.setAtributos(atributos);
+        Personaje.setHabilidades(habilidades);
+        return personaje;
 
-    @Override
-    public boolean verificarAtributos() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'verificarAtributos'");
     }
-
-
-    @Override
-    public void agregarHabilidad() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'agregarHabilidad'");
-    }
-
-    
 
     
 }

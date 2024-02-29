@@ -5,48 +5,63 @@ import java.util.List;
 
 public class Arquero extends Personaje {
 
-    private int destreza=30;
-    private int agilidad=67;
-    private int precision=44;
-    public List<HabilidadesArquero> habilidades;
-    
-    public Arquero(String nombre,String descripcion, String apodo, float dineroInicial, int destreza, int agilidad, int precision) {
-        super(nombre,descripcion, apodo, dineroInicial);
-        this.destreza = destreza;
-        this.agilidad = agilidad;
-        this.precision = precision;
-        this.habilidades= new LinkedList<>();
-        
-    }
-
-    public int getDestreza() {
-        return destreza;
-    }
-
-    public int getAgilidad() {
-        return agilidad;
-    }
-
-    public int getPrecision() {
-        return precision;
-    }
-
-    @Override
-
-    public boolean verificarAtributos(){
-
-        return destreza==30 && agilidad==67 &&precision==44;
-    }
-
-    @Override
-
-    public void agregarHabilidad(){
-
-        habilidades.add(HabilidadesArquero.DISPARO_RAPIDO);
-        habilidades.add(HabilidadesArquero.FLECHA_VENENOSA);
-        habilidades.add(HabilidadesArquero.TIRO_CERTERO);
-    }
+    private String nombre;
+    private String descripcion;
+    private String apodo;
+    private float dineroInicial;
+    private List<String> atributos;
+    private List<String> habilidades;
 
 
     
+    public Arquero(String nombre, String descripcion, String apodo, float dineroInicial, List<String> atributos,
+            List<String> habilidades) {
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.apodo = apodo;
+        this.dineroInicial = dineroInicial;
+        this.atributos = atributos;
+        this.habilidades = habilidades;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public String getDescripcion() {
+        return descripcion;
+    }
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+    public String getApodo() {
+        return apodo;
+    }
+    public void setApodo(String apodo) {
+        this.apodo = apodo;
+    }
+    public float getDineroInicial() {
+        return dineroInicial;
+    }
+    public void setDineroInicial(float dineroInicial) {
+        this.dineroInicial = dineroInicial;
+    }
+    public List<String> getAtributos() {
+        return atributos;
+    }
+    public void setAtributos(List<String> atributos) {
+        this.atributos = atributos;
+    }
+    public List<String> getHabilidades() {
+        return habilidades;
+    }
+    public void setHabilidades(List<String> habilidades) {
+        this.habilidades = habilidades;
+    }
+
+
+   public Personaje contruir(){
+    return new Personaje();
+    }
 }

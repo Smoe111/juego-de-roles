@@ -5,48 +5,53 @@ import java.util.List;
 
 public class Mago extends Personaje {
 
-    private int inteligencia=43;
-    private int sabiduria=64;
-    private int energiaEnergia=37;
-    public List<HabilidadesMago> habilidades;
-    
-    public Mago(String nombre,String descripcion, String apodo, float dineroInicial, int inteligencia, int sabiduria,
-            int energiaEnergia) {
-        super(nombre,descripcion, apodo, dineroInicial);
-        this.inteligencia = inteligencia;
-        this.sabiduria = sabiduria;
-        this.energiaEnergia = energiaEnergia;
-        this.habilidades= new LinkedList<>();
-
+    private String nombre;
+    private String descripcion;
+    private String apodo;
+    private float dineroInicial;
+    private List<String> atributos;
+    private List<String> habilidades;
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public String getDescripcion() {
+        return descripcion;
+    }
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+    public String getApodo() {
+        return apodo;
+    }
+    public void setApodo(String apodo) {
+        this.apodo = apodo;
+    }
+    public float getDineroInicial() {
+        return dineroInicial;
+    }
+    public void setDineroInicial(float dineroInicial) {
+        this.dineroInicial = dineroInicial;
+    }
+    public List<String> getAtributos() {
+        return atributos;
+    }
+    public void setAtributos(List<String> atributos) {
+        this.atributos = atributos;
+    }
+    public List<String> getHabilidades() {
+        return habilidades;
+    }
+    public void setHabilidades(List<String> habilidades) {
+        this.habilidades = habilidades;
     }
 
-    public int getInteligencia() {
-        return inteligencia;
-    }
-
-    public int getSabiduria() {
-        return sabiduria;
-    }
-
-    public int getEnergiaEnergia() {
-        return energiaEnergia;
-    }
-
-    @Override
-
-    public boolean verificarAtributos(){
-
-        return inteligencia==43 && sabiduria==64 && energiaEnergia==37;
-    }
-
-    @Override
-
-    public void agregarHabilidad(){
-        habilidades.add(HabilidadesMago.BOLA_DE_FUEGO);
-        habilidades.add(HabilidadesMago.HECHIZO_DE_CURACION);
-        habilidades.add(HabilidadesMago.RAYO_ELECTRICO);
-    }
-
+   public static contructorMago(){
+     
+    return new
+   } 
    
     
 }
