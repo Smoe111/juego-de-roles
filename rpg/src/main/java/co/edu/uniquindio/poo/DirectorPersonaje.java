@@ -6,6 +6,9 @@ public class DirectorPersonaje {
     
     private ConstructorPersonaje constructor;
 
+    public DirectorPersonaje(){
+        this.constructor=constructor;
+    }
     
     public void producto(String nombre, String descripcion, String apodo, float dineroInicial, List<String> atributos,List<String> habilidades){
 

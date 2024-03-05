@@ -4,11 +4,11 @@ import java.util.List;
 
 public interface ConstructorPersonaje {
     
-    void nombre(String nombre);
-    void descripcion(String descripcion);
-    void apodo(String apodo);
-    void dineroInicial(float dineroInicial );
-    void atributos( List<String> atributos);
-    void habilidades (List<String> habilidades);
+    ConstructorPersonaje nombre(String nombre);
+    ConstructorPersonaje descripcion(String descripcion);
+    ConstructorPersonaje apodo(String apodo);
+    ConstructorPersonaje dineroInicial(float dineroInicial );
+    ConstructorPersonaje atributos( List<String> atributos);
+    ConstructorPersonaje habilidades (List<String> habilidades);
     Personaje construir();
 }

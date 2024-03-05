@@ -15,89 +15,51 @@ public class Personaje {
 
    
 
-    public String getNombre() {
-        return nombre;
+    public Personaje(String nombre2, String descripcion2, String apodo2, float dineroInicial2, List<String> atributos2,
+            List<String> habilidades2) {
+        //TODO Auto-generated constructor stub
     }
 
 
 
+    public String getNombre() {
+        return nombre;
+    }
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-
-
     public String getDescripcion() {
         return descripcion;
     }
-
-
-
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-
-
-
     public String getApodo() {
         return apodo;
     }
-
-
-
     public void setApodo(String apodo) {
         this.apodo = apodo;
     }
-
-
-
     public float getDineroInicial() {
         return dineroInicial;
     }
-
-
-
     public void setDineroInicial(float dineroInicial) {
         this.dineroInicial = dineroInicial;
     }
-
-
-
     public List<String> getAtributos() {
         return atributos;
     }
-
-
-
     public void setAtributos(List<String> atributos) {
         this.atributos = atributos;
     }
-
-
-
     public List<String> getHabilidades() {
         return habilidades;
     }
-
-
-
     public void setHabilidades(List<String> habilidades) {
         this.habilidades = habilidades;
     }
 
 
-
-    public Personaje construir(){
-        
-        Personaje personaje = new Personaje();
-        Personaje.setNombre(nombre);
-        Personaje.setDescripcion(descripcion);
-        Personaje.setApodo(apodo);
-        Personaje.setDineroInicial(dineroInicial);
-        Personaje.setAtributos(atributos);
-        Personaje.setHabilidades(habilidades);
-        return personaje;
-    }
-
-    
 }
+

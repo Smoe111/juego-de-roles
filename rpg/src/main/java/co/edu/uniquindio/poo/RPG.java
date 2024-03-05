@@ -5,6 +5,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class RPG {
+    
+
+    // recibe el personaje ya creado
 
     private String nombreJuego;
     private List<Personaje> personajes;
