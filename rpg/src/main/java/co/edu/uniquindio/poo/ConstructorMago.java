@@ -1,8 +1,9 @@
 package co.edu.uniquindio.poo;
 
+import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MoveAction;
+
 
 public class ConstructorMago implements ConstructorPersonaje {
 
@@ -12,8 +13,11 @@ public class ConstructorMago implements ConstructorPersonaje {
     private float dineroInicial;
     private List<String> atributos;
     private List<String> habilidades;
-    private ConstructorMago(){}
-
+    
+    public ConstructorMago(){
+        this.atributos= new ArrayList<>();
+        this.habilidades= new ArrayList<>();
+    }
     
     public ConstructorPersonaje nombre(String nombre){
         this.nombre=nombre;
@@ -49,15 +53,16 @@ public class ConstructorMago implements ConstructorPersonaje {
     @Override
     public Personaje construir() {
         
-        Mago.setNombre(nombre);
-        Mago.setDescripcion(descripcion);
-        Mago.setApodo(apodo);
-        Mago.setDineroInicial(dineroInicial);
-        Mago.setAtributos(atributos);
-        Mago.setHabilidades(habilidades);
-        return Mago;
+        Personaje personaje = new Personaje();
 
-        
+        personaje.setNombre(nombre);
+        personaje.setDescripcion(descripcion);
+        personaje.setApodo(apodo);
+        personaje.setDineroInicial(dineroInicial);
+        personaje.setAtributos(atributos);
+        personaje.setHabilidades(habilidades);
+        return personaje;
+
     }
 
     

@@ -1,6 +1,6 @@
 package co.edu.uniquindio.poo;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -13,11 +13,10 @@ public class Personaje {
     private List<String> atributos;
     private List<String> habilidades;
 
-   
+    public Personaje(){
 
-    public Personaje(String nombre2, String descripcion2, String apodo2, float dineroInicial2, List<String> atributos2,
-            List<String> habilidades2) {
-        //TODO Auto-generated constructor stub
+        this.atributos= new ArrayList<>();
+        this.habilidades= new ArrayList<>();
     }
 
 

@@ -1,5 +1,6 @@
 package co.edu.uniquindio.poo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ConstructorGuerrero implements ConstructorPersonaje {
@@ -10,39 +11,58 @@ public class ConstructorGuerrero implements ConstructorPersonaje {
     private float dineroInicial;
     private List<String> atributos;
     private List<String> habilidades;
-    private ConstructorGuerrero(){}
+
+    ConstructorGuerrero(){
+
+        this.atributos= new ArrayList<>();
+        this.habilidades= new ArrayList<>();
+    }
 
     
-    public void nombre(String nombre){
+    public ConstructorPersonaje nombre (String nombre){
         this.nombre=nombre;
+        return this;
     }
 
-    public void descripcion(String descripcion){
+    public ConstructorPersonaje descripcion(String descripcion){
         this.descripcion=descripcion;
+        return this;
     }        
 
-    public void apodo(String apodo){
+    public ConstructorPersonaje apodo(String apodo){
         this.apodo=apodo;
+        return this;
     }
 
-    public void dineroInicial(float dineroInicial){
+    public ConstructorPersonaje dineroInicial(float dineroInicial){
         this.dineroInicial=dineroInicial;
+        return this;
     }
 
-    public void atributos(List<String> atributos){
+    public ConstructorPersonaje atributos(List<String> atributos){
         this.atributos=atributos;
+        return this;
     }
 
-    public void habilidades(List<String> habilidades){
+    public ConstructorPersonaje habilidades(List<String> habilidades){
         this.habilidades=habilidades;
+        return this;
 
     }
 
 
     @Override
     public Personaje construir() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'construir'");
+        Personaje personaje= new Personaje();
+
+        personaje.setNombre(nombre);
+        personaje.setDescripcion(descripcion);
+        personaje.setApodo(apodo);
+        personaje.setDineroInicial(dineroInicial);
+        personaje.setAtributos(atributos);
+        personaje.setHabilidades(habilidades);
+
+        return personaje;
     }
 
 }
